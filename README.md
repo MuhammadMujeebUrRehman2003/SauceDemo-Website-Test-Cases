@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:080C10,50:39FF14,100:00FFF5&height=200&section=header&text=🤖%20Selenium%20Test%20Automation&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=C%23%20%7C%20NUnit%20%7C%20Page%20Object%20Model%20%7C%20QA%20Automation&descSize=17&descAlignY=58&descColor=39FF14" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:080C10,50:39FF14,100:00FFF5&height=200&section=header&text=🛒%20Sauce%20Demo%20Test%20Automation&fontSize=32&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=C%23%20%7C%20NUnit%20%7C%20Page%20Object%20Model%20%7C%20QA%20Automation&descSize=17&descAlignY=58&descColor=39FF14" />
 
 </div>
 
@@ -8,7 +8,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=39FF14&center=true&vCenter=true&width=950&lines=Selenium+Test+Automation+Framework+%F0%9F%A4%96;Automating+Sauce+Demo+%7C+Swag+Labs+Website;33+Test+Cases+%7C+12+Page+Objects+%7C+100%25+Pass+Rate;C%23+%2B+NUnit+%2B+Page+Object+Model;ExtentReports+%7C+Data-Driven+Testing+%7C+POM" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=39FF14&center=true&vCenter=true&width=950&lines=Sauce+Demo+(Swag+Labs)+Functional+Test+Suite+%F0%9F%A4%96;33+Test+Cases+%7C+12+Modules+%7C+100%25+Pass+Rate;C%23+%2B+NUnit+%2B+Page+Object+Model;Data-Driven+Testing+%7C+ExtentReports+%7C+POM;Login+%7C+Cart+%26+Checkout+%7C+Marketing+Pages" alt="Typing SVG" />
 
 </div>
 
@@ -29,19 +29,19 @@
 
 ## 👋 Hello Everyone!
 
-I'm pleased to share that I have **successfully completed a Selenium Test Automation Framework** for the **Sauce Demo (Swag Labs)** website! 🎯
+I'm pleased to share my **Sauce Demo (Swag Labs) Functional Test Automation** project! 🎯
 
-This project was **highly informative** and helped me strengthen my understanding of building **robust, scalable, and maintainable automation frameworks** — starting from a documented functional test matrix and carrying it through to working C# automation.
+This project covers **33 documented test scenarios across 12 modules** of the [Sauce Demo](https://www.saucedemo.com/) site — from the classic login/cart/checkout e-commerce flow through to its newer marketing and content pages — automated with a **C# + NUnit + Page Object Model** framework.
 
-> 💡 *Through this experience, I gained practical knowledge of test automation principles, framework design patterns, and QA engineering — which are essential skills for modern software quality assurance.*
+> 💡 *Beyond automating the happy path, this suite documents real engineering trade-offs found along the way — including a couple of assertion gaps worth fixing — which I've captured directly in the test notes rather than glossing over.*
 
 ---
 
 ## 📌 Project Overview
 
-This project demonstrates a complete, production-grade **Selenium WebDriver automation framework** built with **C#, NUnit, and the Page Object Model** — applied to the real-world **Sauce Demo (Swag Labs)** website.
+This project demonstrates a complete, production-style **Selenium WebDriver automation framework** built with **C#, NUnit, and the Page Object Model**, applied to the **Sauce Demo (Swag Labs)** website.
 
-It combines a **standardized 11-column functional test matrix** (Scenario TID, Scenario Description, Test Case ID, Pre-Condition, Steps to Execute, Expected Result, Actual Result, Status, Executed QA Name, Comments, Priority) with **12 Page Object classes**, covering authentication, inventory sorting, cart and checkout, sidebar navigation, and the site's marketing pages (About, Learn More, Integrations, Sign Up, Demo, Social).
+Each of the 33 documented scenarios is tracked through a **standardized 11-column test case schema** (Scenario TID, Scenario Description, Test Case ID, Pre-Condition, Steps to Execute, Expected Result, Actual Result, Status, Executed QA Name, Comments, Priority) and mapped 1:1 to a Page Object method, covering authentication, product catalog behaviour, cart/checkout logic, navigation, and the site's marketing/content pages.
 
 ---
 
@@ -51,12 +51,12 @@ It combines a **standardized 11-column functional test matrix** (Scenario TID, S
 
 | 🔹 Feature | 📘 Description |
 |:-:|:-|
-| 🗂️ Page Object Model (POM) | 12 dedicated page classes · clean architecture · reusability · separation of concerns |
-| 📊 Data-Driven Testing | Multi-account login, 6-product catalog checks, 3-platform social link validation |
-| 🧱 Hierarchical Test Structure | Organised test layers · improved maintainability · logical grouping |
-| ⚙️ Multi-Tab & Sync Handling | New-tab switching for demo/sign-up/integration flows · dynamic element handling |
-| ✅ NUnit Framework | Test execution management · assertions · setup & teardown lifecycle |
+| 🗂️ Page Object Model (POM) | 12 page classes (LoginPage, HomePage, CheckOutPage, AboutPage, etc.) · clean separation of test logic and locators |
+| 📊 Data-Driven Testing | Product-list and multi-account scenarios parameterised across all 6 catalog products / 6 login account types |
+| 🧱 Structured Test Case Design | 33 scenarios analysed and documented before automation · positive, negative & functional coverage |
+| ✅ NUnit Framework | Test execution management, assertions, setup & teardown lifecycle |
 | 📋 Extent Reports | Execution status captured per test case for traceability |
+| 🩺 Honest QA Notes | Gaps in current assertion coverage documented directly in the test matrix, not hidden |
 
 </div>
 
@@ -105,17 +105,17 @@ It combines a **standardized 11-column functional test matrix** (Scenario TID, S
 | 🧩 Module | 🔖 Prefix | 🧪 Test Cases | 🗂️ Page Object |
 |:-|:-:|:-:|:-|
 | Login | `TC-LOGIN` | 2 | `LoginPage` |
-| Product Listing (Inventory) | `TC-HOME` | 7 | `HomePage` |
+| Products / Home | `TC-HOME` | 7 | `HomePage` |
 | Product Detail | `TC-CART` | 1 | `AddToCartPage` |
 | Cart & Checkout | `TC-CO` | 9 | `CheckOutPage` |
+| Book a Demo | `TC-DEMO` | 1 | `DemoPage` |
+| Social Media Links | `TC-SOC` | 1 | `SocialMediaPage` |
 | Sidebar Navigation | `TC-SB` | 1 | `SideBarItems` |
 | Logout | `TC-LO` | 1 | `LogoutPage` |
-| About Page Content | `TC-ABT` | 7 | `AboutPage` |
+| About Page | `TC-ABT` | 7 | `AboutPage` |
 | Learn More | `TC-LM` | 1 | `LearnMorePage` |
 | Integrations | `TC-INT` | 1 | `AboutIntegrationsPage` |
 | Sign Up | `TC-SU` | 1 | `SignUpPage` |
-| Book a Demo | `TC-DEMO` | 1 | `DemoPage` |
-| Social Media Links | `TC-SOC` | 1 | `SocialMediaPage` |
 | **Total** | | **33** | **12 page classes** |
 
 </div>
@@ -139,25 +139,24 @@ Test Case Design:
   ✔ Standardized 11-Column Test Case Schema
   ✔ Scenario-to-Test-Case Traceability (SCN-XXX → TC-XXX)
   ✔ Priority Classification (High / Medium / Low)
-  ✔ Multi-Account & Data-Driven Coverage
+  ✔ Positive, Negative & Functional Scenario Coverage
 
 Framework Design:
   ✔ Page Object Model (POM) Architecture — 12 Page Classes
   ✔ Reusable Test Components & Base Classes
-  ✔ Hierarchical Test Structure & Grouping
+  ✔ Data-Driven Execution (6 login accounts, 6 catalog products, 3 social platforms)
   ✔ Clean Separation of Concerns
 
 Selenium WebDriver:
   ✔ Browser Automation with C#
+  ✔ New-Tab / Multi-Window Handling (Book a Demo, Sign Up, Social Links, Integrations)
   ✔ Dynamic Element Handling & Locators
-  ✔ Multi-Tab Handling (Demo, Sign Up, Integrations, Social Links)
-  ✔ End-to-End Checkout Flow Automation
 
-Quality Engineering:
+Testing:
   ✔ NUnit Framework Setup & Assertions
+  ✔ Test Lifecycle Management (Setup/Teardown)
   ✔ Extent Reports with Execution Status
-  ✔ Scalable & Maintainable Test Codebase
-  ✔ Structured Test Case Documentation
+  ✔ Gap Analysis — documented assertion coverage limitations for future hardening
 ```
 
 ---
@@ -172,10 +171,10 @@ Quality Engineering:
 
 ```text
 Selenium WebDriver      ████████████████████   90%
-POM Framework           ████████████████████   90%
+Page Object Model       ████████████████████   90%
 C# Automation           ██████████████████     85%
-NUnit Testing           ████████████████       80%
-Test Case Design        ███████████████        75%
+Test Case Design        ██████████████████     85%
+NUnit Testing           █████████████████      80%
 Extent Reporting        ██████████████         70%
 ```
 
@@ -187,24 +186,37 @@ Extent Reporting        ██████████████         70%
 
 | ⚙️ Test Area | 🔗 Scope | 📘 Description |
 |:-:|:-:|:-|
-| 🟢 Login Module | Authentication | Multi-account login (standard, locked-out, problem, glitch, error, visual), validation errors |
-| 🔵 Product Listing | Inventory Page | Sorting (price/name), product text, Add to Cart / Remove button states |
-| 🟠 Cart & Checkout | Shopping Flow | Add/remove items, cancel checkout, field validation, full order completion |
-| 🟣 Navigation & Marketing | Sidebar / About | Sidebar links, About page content, Learn More, Integrations, Sign Up, Demo |
-| 🔴 Social & Logout | Footer / Session | Social media link destinations, logout redirect to Login |
+| 🟢 Login Module | Authentication | All 6 SauceDemo account types, invalid/blank credential validation |
+| 🔵 Product Catalog | Products (Home) Page | Sorting (price/name asc-desc), product listing, Add to Cart / Remove button states |
+| 🟠 Cart & Checkout | Shopping Cart | Add/remove items, cancel checkout, full order completion, field-level validation errors |
+| 🟣 Navigation & Session | Sidebar / Logout | Sidebar menu links, logout-and-return-to-login flow |
+| 🔴 Marketing & Content | About / Learn More / Integrations / Sign Up / Demo / Social | Headings, button text, and new-tab destinations across the site's content pages |
 
 </div>
 
 ---
 
-## 📝 QA Observations & Known Limitations
+## 🌐 Modules Covered
 
-Documenting a framework honestly includes flagging what still needs attention — a few items surfaced while working through this suite:
+- **Login** — all six SauceDemo test accounts (standard, locked-out, problem, performance-glitch, error, visual), invalid-credential and blank-field validation
+- **Products / Home** — product name rendering, 4-way sorting (price/name, ascending/descending), Add to Cart ↔ Remove button state toggling across all 6 products
+- **Product Detail** — locating and opening each catalog product from the inventory list
+- **Cart & Checkout** — add/remove from cart, Continue Shopping, cancel checkout, full order completion, empty-cart edge case, First Name / Last Name / Postal Code validation
+- **Sidebar Navigation & Logout** — hamburger menu, "All Items" link, logout back to the Login page
+- **About Page** — main title, tagline, header links, close/cross banner behaviour, Sign Up and Book a Demo button text
+- **Learn More / Integrations / Sign Up / Book a Demo** — new-tab destinations and headings for each outbound content page
+- **Social Media Links** — Twitter/X, Facebook, and LinkedIn icons opening the correct external domain
 
-- **Login assertions gap** — `LoginPage.Login()` currently performs the login *action* but doesn't assert the resulting page or error message, so pass/fail on `TC-LOGIN-01`/`02` isn't strictly verified by the automation yet.
-- **`locked_out_user` misclassification** — this SauceDemo account is a documented negative-test case (expected to be blocked with *"Epic sadface: Sorry, this user has been locked out."*), but it's currently exercised inside the valid-login suite. Flagged for reclassification as a negative scenario.
-- **DataSource naming inconsistency** — `TC-HOME-06`'s automation references a DataSource node named for a different test method; a cleanup item for the data files.
-- **Empty-cart checkout edge case** — `TC-CO-06` confirms checkout can be completed even after the cart is emptied beforehand; flagged for manual confirmation of whether this is intended business behaviour.
+---
+
+## 🩺 QA Notes & Recommended Follow-ups
+
+Documenting gaps honestly is part of the process — a few items flagged during this pass for future hardening:
+
+- **Login assertions** — `LoginPage.Login()` currently performs the action steps only, without asserting the resulting page or error message. `locked_out_user` in particular should be treated as a negative scenario and explicitly blocked with its "Epic sadface" message.
+- **Error message verification** — the invalid-credential test data isn't yet checked against the on-screen `[data-test="error"]` element; an explicit assertion would close this gap.
+- **Test data wiring** — the Add-to-Cart button-text test currently reuses a `[DataSource]` node named for the Remove-button test; worth renaming for clarity.
+- **Empty-cart checkout** — checkout currently completes even if the cart is emptied right before proceeding; flagged for manual confirmation of intended business logic.
 
 ---
 
@@ -212,25 +224,25 @@ Documenting a framework honestly includes flagging what still needs attention �
 
 This project significantly enhanced my understanding of:
 
-- **Page Object Model** design principles and best practices
-- **Selenium WebDriver + C#** automation framework development
-- **NUnit** test management and assertion strategies
-- **Data-driven testing** across multiple accounts, products, and platforms
+- **Structured test case analysis** — translating a mixed e-commerce + marketing-site application into a traceable, prioritised scenario matrix
+- **Page Object Model** design across 12 distinct page classes, including multi-tab flows
+- **Data-driven testing** across multiple account types, products, and social platforms
+- **NUnit** test management, assertions, and lifecycle handling
+- **Honest test reporting** — documenting automation coverage gaps as part of the deliverable, not just green checkmarks
 - **ExtentReports** integration for execution traceability
-- **Reviewing automation critically** — catching assertion gaps and edge cases, not just green checkmarks
 
 ---
 
 ## 🌍 Real-World Applications
 
-This type of test automation framework is commonly used in:
+This type of test automation approach is commonly used in:
 
 <div align="center">
 
-| 🛒 E-Commerce QA | 📱 Mobile Web Testing |
+| 🛒 E-Commerce QA | 📱 Web Application Testing |
 |:-:|:-:|
 | ☁️ SaaS Regression Suites | 🏢 Enterprise Application Testing |
-| 📚 LMS Platform Validation | 📦 Inventory & ERP System QA |
+| 📚 Content/Marketing Site Validation | 📦 Multi-Account Auth Testing |
 
 </div>
 
@@ -242,10 +254,8 @@ This type of test automation framework is commonly used in:
 
 ![CI/CD](https://img.shields.io/badge/CI_CD_Integration-Planned-39FF14?style=for-the-badge)
 ![Parallel](https://img.shields.io/badge/Parallel_Execution-Planned-00FFF5?style=for-the-badge)
-![API](https://img.shields.io/badge/API_Automation-Planned-9B59FF?style=for-the-badge)
-![Cloud](https://img.shields.io/badge/Cloud_Testing-Planned-FF6600?style=for-the-badge)
-![BrowserStack](https://img.shields.io/badge/BrowserStack-Planned-FF8C00?style=for-the-badge)
-![Docker](https://img.shields.io/badge/Docker_Integration-Planned-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Assertions](https://img.shields.io/badge/Assertion_Hardening-Planned-9B59FF?style=for-the-badge)
+![CrossBrowser](https://img.shields.io/badge/Cross_Browser_Testing-Planned-FF6600?style=for-the-badge)
 
 </div>
 
@@ -294,19 +304,19 @@ This type of test automation framework is commonly used in:
 
 ```yaml
 Achievement:
-  ✔ Sauce Demo Functional Test Matrix   — 33 Test Cases Documented
+  ✔ Sauce Demo Functional Test Matrix          — 33 Test Cases Documented
   ✔ Page Object Model (POM) — 12 Page Classes  — Implemented
-  ✔ NUnit Test Framework                — Hands-On
-  ✔ Data-Driven Testing                 — Applied
-  ✔ 100% Pass Rate Across All Scenarios — Achieved
-  ✔ Mentor Guidance Received            — Sir Haris Irfan
+  ✔ C# + NUnit Automation Suite                — Hands-On
+  ✔ Data-Driven Testing                        — Applied
+  ✔ 100% Pass Rate Across All Scenarios        — Achieved
+  ✔ Mentor Guidance Received                   — Sir Haris Irfan
 ```
 
 ---
 
 <div align="center">
 
-> ### ❝ Automating tests today is the foundation of reliable software tomorrow. ❞
+> ### ❝ A well-documented test case is the blueprint every automated script should follow. ❞
 
 <br>
 
